@@ -23,6 +23,8 @@ before_build:
 - cmd: dotnet restore ./src/EPPlus.sln
 build:
   verbosity: minimal
+test_script:
+- dotnet test src\EPPlusTest\EPPlus.Test.csproj --configuration Release --no-build /property:Platform=AnyCPU
 artifacts:
 - path: '**\*.nupkg'
   name: EPPlus Nuget Package
