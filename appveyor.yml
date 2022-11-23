@@ -4,9 +4,6 @@ branches:
   - develop
 configuration: release
 #image: Visual Studio 2022
-environment:
-  APPVEYOR_BUILD_WORKER_IMAGE:
-    secure: d6B64vqtrbSlGoff47K3t2iwPXjKWnZUDU12XmZIsx0=
 platform: Any CPU
 init:
 - ps: >-
